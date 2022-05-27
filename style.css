@@ -1,0 +1,254 @@
+body {
+    position: relative; 
+    text-align: center;
+}
+
+
+
+h1 {
+    position: relative;
+    color: #740909;
+    font-size: 50px;  
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    position: relative; 
+    font-size: 25px; 
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+blockquote{
+    margin-top: 70px;
+    position: relative;
+    color: black;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+blockquote::before{
+    content: "«";
+}
+
+blockquote::after{
+    content: "»";
+}
+
+p{
+    position: relative;
+    color: black;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+div{
+    position: relative;
+    background-color: #b700ff;
+    border: 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 40%;
+}
+
+div > {
+    text-align: center;
+}
+
+ul{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    
+}
+
+img{
+    position: relative;
+    border-radius: 90%;
+    border: 4px;
+    border-color:black;
+    width:142px;
+    height:142px;
+}
+
+.main_div{
+    height: 300px;
+}
+
+.main_text{
+    position: relative;
+    padding-left: 100px;
+    padding-right: 30px;
+}
+
+.main_photo{
+    position: relative;
+    float: right;
+    padding-right: 30px;
+    border-radius: 10px;
+    margin-left: 30px;
+    width: auto;
+    height: auto;
+}
+
+input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 15px;
+    border-style: hidden;
+}
+
+tr{
+    text-align: center;
+    
+}
+
+td{
+    text-align: center;
+    padding: 3px 15px 3px 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;  
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+th{
+    text-align: center;
+    /* border: 1px solid; */
+    padding: 3px 15px 3px 15px;
+    background-color: black;
+    color: #fafafa;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 15px;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: 15px;
+}
+
+footer{
+    position: relative;
+    background-color: rgb(44, 43, 43);
+    color: #fafafa;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+button{
+    border-radius: 10px;
+    background-color:rgb(200, 191, 183);
+    border-color: black;
+    margin: 20px;
+    width: 190px;
+    height: 280px;
+}
+
+progress{
+    width: 70%;
+    height: 22px;
+}
+
+.submit{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px 15px 7px 15px;
+    border-radius: 5px;
+    background-color: rgb(44, 43, 43);
+    color: #fafafa;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 80px 10px 80px;
+    column-count: 3;
+    column-gap: 30px;
+    column-width: 100px; 
+    column-rule: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+       
+}
+
+.znyzhka{
+    color: red;
+}
+
+a::after{
+    color: red;
+}
+
+sub{
+    font-size: medium;
+}
+
+.scale button{
+    transition: all 1.2s linear 0s;
+}
+
+.scale:hover img{
+    transform: scale(1.2, 1.2);
+}
+
+.move .main_photo, .main_text{
+    transition: all 0.5s ease-in 0s;
+}
+
+.move:hover .main_photo{
+    transform: translate(-900px);
+}
+
+.move:hover .main_text{
+    transform: translate(250px)
+}
+
+.d4 {
+    width: 0; 
+    height: 0;
+    border-width: 0px;
+    border-radius: 0%;
+    background-color: rgba(0,0,0,0);
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 100px solid rgb(44, 43, 43);
+    /* left: 620px; */
+    /* top: -60px; */
+    animation: translate  1s linear infinite; 
+}
+
+@keyframes translate {
+    from{top: -20px; left: 620px;}
+    25%{top: 70px; left:620px;}
+    50%{top: 120px; left:620px;}
+    75%{top: 70px; left:620px;}
+    to{top: -20px; left: 620px}
+}
+
+.student{
+    font-size: larger;
+}
